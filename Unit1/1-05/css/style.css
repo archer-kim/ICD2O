@@ -1,0 +1,40 @@
+#my-header {
+  background-color: rgb(255, 165, 0);
+  color: hsl(194, 76%, 16%);
+  padding: 67px;
+  text-align: center;
+}
+body {
+  background-color:powderblue; 
+}
+p {
+  background-color:blueviolet; 
+}
+#alttext {
+  background-color: rgb(58, 57, 58);
+  color:powderblue;
+}
+#altbody {
+  background-color: rgb(218,118,218);
+}
+#city-name {
+  background-color: rgb(85, 165, 116);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 20px;
+}
+#header {
+  background-color: bisque;
+  padding: 30px;
+  text-align: center;
+}
+#citybody { 
+  background-color: rgb(163, 174, 255);
+}
+.city-name {
+  background-color: coral;
+  font-size: 30px;
+}
+.asd {
+  background-color: transparent;
+}
