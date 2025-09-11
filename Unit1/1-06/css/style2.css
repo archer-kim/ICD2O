@@ -1,0 +1,53 @@
+#bg1 {
+  background-color:rgb(117, 168, 222);
+}
+#title1 {
+  font-size:55px;
+  text-align: center;
+  color:white;
+  font-family:'Courier New', Courier, monospace;
+}
+#list {
+  font-size: 20px;
+}
+#lar {
+  font-size:25px;
+}
+.box2 {
+  background-color: white;
+  padding: 30px;
+  border: 3px solid #544cc4;
+  width: 800px;
+  height:500px;
+  position:relative;
+  left:1023px;
+  bottom: 565px;
+}
+#gf {
+  scale: 30%;
+  position: relative;
+  right:350px;
+  bottom:550px;
+  border: solid 10px #000000;
+}
+.box {
+  background-color: white;
+  padding: 30px;
+  border: 3px solid #544cc4;
+  width: 800px;
+  height: 500px;
+}
+#pop {
+  font-size:25px;
+}
+#population, th, td {
+  border:solid 1px black;
+  font-size:20px;
+}
+#athens {
+  scale: 50%;
+  border: solid 3px black;
+  position: relative;
+  bottom:300px;
+  left: 107px;px;
+}

@@ -1,14 +1,5 @@
-#my-header {
-  background-color: rgb(255, 165, 0);
-  color: hsl(194, 76%, 16%);
-  padding: 67px;
-  text-align: center;
-}
-body {
-  background-color:powderblue; 
-}
 p {
-  background-color:blueviolet; 
+  background-color:rgb(195, 43, 226, 0.239); 
 }
 #alttext {
   background-color: rgb(58, 57, 58);
@@ -26,10 +17,10 @@ p {
 #header {
   background-color: bisque;
   padding: 30px;
-  text-align: center;
+  text-align:right;
 }
 #citybody { 
-  background-color: rgb(163, 174, 255);
+  background-color: rgb(255, 255, 255);
 }
 .city-name {
   background-color: coral;
@@ -37,4 +28,29 @@ p {
 }
 .asd {
   background-color: transparent;
+}
+.button {
+  background-color: white;
+  padding:2px;
+  border: dotted;
+  border-color: sienna;
+  cursor:pointer;
+}
+.button:hover {
+  background-color: rgb(145, 144, 144);
+}
+#my-header {
+  background-color: rgb(241, 241, 241);
+  color: hsl(196, 32%, 25%);
+  padding: 67px;
+  text-align: center;
+  border: solid;
+  border-top-color: red;
+  border-left-color: orange;
+  border-right-color: yellow;
+  border-bottom-color: blue;
+}
+body {
+  height:1000px;
+  background-image:linear-gradient(sienna,green,blue);
 }
