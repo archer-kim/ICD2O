@@ -17,10 +17,10 @@ p {
 #header {
   background-color: bisque;
   padding: 30px;
-  text-align:right;
+  text-align:center;
 }
-#citybody { 
-  background-color: rgb(255, 255, 255);
+#city-body {
+  background-color: rgb(96, 190, 116);
 }
 .city-name {
   background-color: coral;
@@ -33,6 +33,7 @@ p {
   background-color: white;
   padding:2px;
   border: dotted;
+  border-radius: 2px;
   border-color: sienna;
   cursor:pointer;
 }
@@ -50,7 +51,14 @@ p {
   border-right-color: yellow;
   border-bottom-color: blue;
 }
-body {
+.body {
   height:1000px;
   background-image:linear-gradient(sienna,green,blue);
+}
+#yay {
+  border-left-color: black;
+  border-right-color: black;
+  border-top-color: salmon;
+  border-bottom-color: salmon;
+  border: 10px,solid;
 }
