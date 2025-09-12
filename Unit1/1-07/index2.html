@@ -52,8 +52,26 @@
       </li>
     </ul>
     <div class="hit">
-      <h2>slider + list</h2>
+      <h2>slider + list + new color scheme</h2>
     </div>
     <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0">
+    <button id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised" type="button">popup message</button>
+    <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <script>
+      (function () {
+        'use strict';
+        window['counter'] = 0;
+        var snackbarContainer = document.querySelector('#demo-toast-example');
+        var showToastButton = document.querySelector('#demo-show-toast');
+        showToastButton.addEventListener('click', function () {
+          'use strict';
+          var data = { message: 'button pressed' + ++counter };
+          snackbarContainer.MaterialSnackbar.showSnackbar(data);
+        });
+      }());
+    </script>
   </body>
 </html>
