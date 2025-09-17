@@ -1,0 +1,19 @@
+div.ememy {
+  background-image: radial-gradient(blue,green);
+  position:relative;
+  width: 150px;
+  height: 50px;
+  border: solid 3px;
+  left:200px;
+}
+#ers {
+  color:white;
+}
+div.butt-lol {
+  position: relative;
+  left: 200px;
+  top: 135px;
+}
+body {
+  background-color: rgb(225, 255, 222);
+}
