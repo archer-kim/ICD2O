@@ -15,6 +15,12 @@
   <link rel="manifest" href="./favicons/site.webmanifest">
 </head>
 <style>
+  #cgpt {
+    position:relative;
+    scale:20%;
+    left:430px;
+    top:-470px;
+  }
   div.knot {
     position: relative;
     text-align: center;
@@ -43,13 +49,17 @@
     <form action="#">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input id="userInput" class="mdl-textfield__input" type="text" id="sample3">
-        <label class="mdl-textfield__label" for="sample3">Hit button to search (chatgpt)</label>
+        <label class="mdl-textfield__label" for="sample3">Search (chatgpt)</label>
       </div>
     </form>
       <button id="searchButton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
         <i class="material-icons">search</i> 
       </button>
+      <button id="clearButton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+        <i class="material-icons">cancel</i>
+      </button>
   </div>
+  <img id="cgpt" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/1024px-ChatGPT-Logo.svg.png" alt="chat">
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script>
     const button = document.getElementById('searchButton');
@@ -59,6 +69,18 @@
       const q = (input.value || '').trim();
       const url = 'https://chatgpt.com/?q=' + encodeURIComponent(q);
       window.open(url, '_blank');
+    });
+    document.getElementById('clearButton').addEventListener('click', () => {
+      document.getElementById('userInput').value = '';
+      document.getElementById('userInput').focus();
+    });
+    input.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        const q = (input.value || '').trim();
+        const url = 'https://chatgpt.com?q=' + encodeURIComponent(q);
+        window.open(url, '_blank');
+      }
     });
   </script>
 </body>
